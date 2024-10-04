@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "mod-tutorial",
+	"version": "${version}",
+	"name": "mod tutorial",
+	"description": "This is a mod created by ordo",
+	"authors": [
+		"Ordo"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/mod-tutorial/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ordo.modid.ModTutorial"
+		],
+		"client": [
+			"net.ordo.modid.ModTutorialClient"
+		],
+		"fabric-datagen": [
+			"net.ordo.modid.ModTutorialDataGenerator"
+		]
+	},
+	"mixins": [
+		"mod-tutorial.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
